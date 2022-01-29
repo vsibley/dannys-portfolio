@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: #204051;
+}
+
+#navB {
+ font-family: 'Gentium Basic', serif;
+ color: #E4E3E3;
+}
+
+#introSec {
+  background-color: #E4E3E3;
+}
+
+#introSec h1 {
+  font-family: 'Rokkitt', serif;
+}
+
+.fab {
+  color: #84A9AC;
+}
+
+.fas {
+  color: #84A9AC;
+}
+
+.far {
+  color: #84A9AC;
+}
+
+#skills h1 {
+  font-family: 'Rokkitt', serif;
+  color: #E4E3E3;
+}
+
+
+#skills h2{
+  font-family:'Rokkitt', serif;
+  color: #E4E3E3;
+  size: 3rem;
+}
+
+
+#skills p{
+  font-family:'Rokkitt', serif;
+  color: #E4E3E3;
+  size: 1rem;
+  margin-top: -15px;
+}
+
+#projects {
+  background-color: #E4E3E3;
+}
+
+
+#projects h1 {
+  font-family: 'Rokkitt', serif;
+  color: #204051;
+}
+
+#contactForm {
+  background-color: #3B6978;
+}
+
+#footer {
+  font-family: 'Gentium Basic', serif;
+  color: #E4E3E3;
+  size: 15px;
+ }
+
+ #contactForm {
+   color: #E4E3E3;
+ }
+
+ #contactForm h1 {
+  font-family: 'Rokkitt', serif;
+  color: #E4E3E3;
+}
+
+#mContain {
+  background-color: #E4E3E3;
+}
+
+#resume {
+  background-color: #E4E3E3;
+  font-family: 'Gentium Basic', serif;
+}
+
+#wrkExp {
+  background-color: #c8c8c8;
+}
+
+#resumeSkills {
+  background-color: #c8c8c8;
+}
