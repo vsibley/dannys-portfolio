@@ -1,22 +1,3 @@
-// let messageArray = ["Hi, I'm Danny!"];
-// let textPosition = 0;
-// let speed = 100;
-
-
-// typrWriter = () => {
-//   document.querySelector('#message').innerHTML = messageArray[0].substring(0, textPosition) + "<span>\u25ae</span>";
-
-//   if(textPosition++ != messageArray[0].length)
-//   setTimeout(typrWriter, speed);
-// }
-
-// window.addEventListener("load", typewriter);
-
-// typrWriter();
-
-
-
-   
 const textDisplay = document.getElementById('text')
 const phrases = ["Hello, I'm Danny!"]
 let i = 0

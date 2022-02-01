@@ -7,19 +7,19 @@
   <!-- stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=PT+Sans+Narrow&family=Rokkitt:wght@200&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=PT+Sans+Narrow&family=Rokkitt:wght@200&display=swap"rel="stylesheet">
+   <!-- build:css css/main.css -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <!-- endbuild -->
 </head>
 
 <body>
   <!-- navbar -->
   <nav id="navB" class="navbar navbar-expand-lg navbar-dark top p-3">
-    <a class="navbar-brand" href="#">Danny Sibley</a>
+    <a class="navbar-brand" href="index.html">Danny Sibley</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,6 +30,8 @@
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Home </a>
             <a class="nav-link active" href="resume.html">Resume<span class="sr-only">(current)</span></a>
+            <a class="nav-link" class="btn" data-toggle="modal" data-target="#exampleModal">Contact me</a>
+
           </div>
         </div>
       </div>
@@ -63,9 +65,9 @@
 
       <!-- *Education info -->
 
-      <div class="row pt-3">
+      <div class="row">
         <div class="col-12 col-md-6">
-          <h1 class="h5 bg-light p-2">Education:</h1>
+          <h1 class="h5 bg-titles p-2">Education:</h1>
           <div class="py-2">
             <h2 class="h6">Nucamp Back End Coding Bootcamp</h2>
             <p class="text-muted mt-n2">November 2021 - March 2022</p>
@@ -84,7 +86,7 @@
         <!-- *Related course work -->
 
         <div class="col-12 col-md-6">
-          <h1 class="h5 fw-bolder bg-light p-2">Related Course Work:</h1>
+          <h1 class="h5 fw-bolder bg-titles p-2">Related Course Work:</h1>
           <h2 class="h6">Computing and Data Analysis</h2>
           <ul class="list-unstyled mt-n2 text-muted small">
             <li>-Used Python to build data structures, algorithms and data analysis</li>
@@ -114,9 +116,9 @@
       <!-- *Work experience section -->
 
 
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="col-6 col-md-12">
-          <h1 class="h5 fw-bolder bg-light p-2">Related Work Experience:</h1>
+          <h1 class="h5 fw-bolder bg-titles p-2">Related Work Experience:</h1>
           <div>
             <h2 class="h6 mt-2 fw-bolder">Field Service Engineer III at Tokyo Electron</h2>
             <p class="text-muted mt-n2">May 2017 - Present</p>
@@ -156,9 +158,9 @@
 
       <!-- *skills & activites -->
 
-      <div class="row pt-5 mt-5">
+      <div class="row pt-5">
         <div class="col-12 col-md-6">
-          <h1 class="h5 fw-bolder bg-light p-2">Skills:</h1>
+          <h1 class="h5 fw-bolder bg-titles p-2">Skills:</h1>
           <div class="py-2">
             <ul>
               <li>Proficient in Speaking German</li>
@@ -175,7 +177,7 @@
         <!-- *Related course work -->
 
         <div class="col-12 col-md-6">
-          <h1 class="h5 fw-bolder bg-light p-2">Other activites:</h1>
+          <h1 class="h5 fw-bolder bg-titles p-2">Other activites:</h1>
           <h2 class="h6">Computing and Data Analysis</h2>
           <p class="mt-n2 text-muted small">Alumni of Delta Tau Delta Fraternity – As a member of Delta Tau Delta have
             served in numerous executive roles including Philanthropy Chairmen, Honor Board Representative, and Head
@@ -184,21 +186,65 @@
       </div>
     </div>
 
-    <div class="container pt-5 ">
+    <div class="container pt-5">
       <div class="row justify-content-center">
         <div class="flex-col">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item"><a class="btn btn-outline-dark" href="imgs/Danny Sibley Resume.pdf"
-              download="Danny-Sibley's resume">Download A copy</a></li>
-              <li class="list-inline-item ">
-                <a href="mailto: sibley.danny@gmail.com" class="btn btn-outline-dark">Contact me</i><a>
-                </li>
+                download="Danny-Sibley's resume">Download A copy</a></li>
+
           </ul>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" id="modalBody">
+        <div class="modal-header bg-white">
+          <h5 class="modal-title" id="exampleModalLabel">Contact info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-white">
+          <div class="container-fluid px-5 pb-3">
+            <div class="row align-items-center justify-content-center">
+              <div class="col">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+              </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email Adddress">
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-light" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- *footer -->
   <section id="footer">
@@ -215,10 +261,14 @@
 
 
   <!-- scripts -->
+      <!-- build:js js/main.js -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>

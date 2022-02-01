@@ -1,0 +1,112 @@
+$primary: #204051;
+$dblue: #3B6978;
+$lblue:#84A9AC;
+$light: #E4E3E3;
+$bg-gray: #E4E3E3;
+$pfont: 'PT Sans Narrow', sans-serif;
+$header-font: 'Rokkitt', serif;
+$nav-font: 'Gentium Basic', serif;
+
+
+
+body {
+  font-family: $pfont; 
+  background-color: $primary;
+}
+
+#navB {
+ font-family: $nav-font;
+ color: $light;
+}
+
+#introSec {
+  background-color: $light;
+}
+
+#introSec h1 {
+  font-family: $header-font;
+}
+
+.fab {
+  color: $lblue;
+}
+
+.fas {
+  color: $lblue;
+}
+
+.far {
+  color: $lblue;
+}
+
+#skills h1 {
+  font-family: $header-font;
+  color: #E4E3E3;
+}
+
+
+#skills h2{
+  font-family:$header-font;
+  color: $light;
+  size: 3rem;
+}
+
+
+#skills p{
+  font-family:$header-font;
+  color: $light;
+  size: 1rem;
+  margin-top: -15px;
+}
+
+#projects {
+  background-color: $light;
+}
+
+
+#projects h1 {
+  font-family: $header-font;
+  color: $primary;
+}
+
+
+
+#footer {
+  font-family: $nav-font;
+  color: $light;
+  size: 15px;
+ }
+
+ #modalBody{
+   background-color: $primary;
+   font-family: $header-font;
+ }
+
+
+#resume {
+  background-color: $light;
+  font-family: $nav-font;
+  padding-bottom: 2rem;
+}
+
+#wrkExp {
+  background-color: $bg-gray;
+}
+
+#resumeSkills {
+  background-color: $bg-gray;
+}
+
+
+#message {
+  color: $primary;
+}
+
+.bg-titles {
+  background-color: $primary;
+  color: $light;
+}
+
+#resName {
+  color: $dblue;
+}

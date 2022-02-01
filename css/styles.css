@@ -1,111 +1,74 @@
-
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
-  background-color: #204051;
-}
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: #204051; }
 
 #navB {
- font-family: 'Gentium Basic', serif;
- color: #E4E3E3;
-}
+  font-family: "Gentium Basic", serif;
+  color: #E4E3E3; }
 
 #introSec {
-  background-color: #E4E3E3;
-}
+  background-color: #E4E3E3; }
 
 #introSec h1 {
-  font-family: 'Rokkitt', serif;
-}
+  font-family: "Rokkitt", serif; }
 
 .fab {
-  color: #84A9AC;
-}
+  color: #84A9AC; }
 
 .fas {
-  color: #84A9AC;
-}
+  color: #84A9AC; }
 
 .far {
-  color: #84A9AC;
-}
+  color: #84A9AC; }
 
 #skills h1 {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
+  color: #E4E3E3; }
+
+#skills h2 {
+  font-family: "Rokkitt", serif;
   color: #E4E3E3;
-}
+  size: 3rem; }
 
-
-#skills h2{
-  font-family:'Rokkitt', serif;
-  color: #E4E3E3;
-  size: 3rem;
-}
-
-
-#skills p{
-  font-family:'Rokkitt', serif;
+#skills p {
+  font-family: "Rokkitt", serif;
   color: #E4E3E3;
   size: 1rem;
-  margin-top: -15px;
-}
+  margin-top: -15px; }
 
 #projects {
-  background-color: #E4E3E3;
-}
-
+  background-color: #E4E3E3; }
 
 #projects h1 {
-  font-family: 'Rokkitt', serif;
-  color: #204051;
-}
-
-#contactForm {
-  background-color: #3B6978;
-}
+  font-family: "Rokkitt", serif;
+  color: #204051; }
 
 #footer {
-  font-family: 'Gentium Basic', serif;
+  font-family: "Gentium Basic", serif;
   color: #E4E3E3;
-  size: 15px;
- }
+  size: 15px; }
 
- #contactForm {
-   color: #E4E3E3;
- }
-
- #contactForm h1 {
-  font-family: 'Rokkitt', serif;
-  color: #E4E3E3;
-}
-
-#mContain {
-  background-color: #E4E3E3;
-}
+#modalBody {
+  background-color: #204051;
+  font-family: "Rokkitt", serif; }
 
 #resume {
   background-color: #E4E3E3;
-  font-family: 'Gentium Basic', serif;
-  padding-bottom: 2rem;
-}
+  font-family: "Gentium Basic", serif;
+  padding-bottom: 2rem; }
 
 #wrkExp {
-  background-color: #c8c8c8;
-}
+  background-color: #E4E3E3; }
 
 #resumeSkills {
-  background-color: #c8c8c8;
-}
-
-span{
-  animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker{
-  50%{
-    opacity: 0;
-  }
-}
+  background-color: #E4E3E3; }
 
 #message {
-  color: #204051;
-}
+  color: #204051; }
+
+.bg-titles {
+  background-color: #204051;
+  color: #E4E3E3; }
+
+#resName {
+  color: #3B6978; }

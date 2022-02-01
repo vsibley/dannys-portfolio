@@ -7,13 +7,16 @@
   <!-- stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=PT+Sans+Narrow&family=Rokkitt:wght@200&display=swap"
     rel="stylesheet">
+  <!-- build:css css/main.css -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+  <!-- endbuild -->
+
 </head>
 
 
@@ -30,6 +33,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-link" href="resume.html">Resume</a>
+          <a class="nav-link" class="btn" data-toggle="modal" data-target="#exampleModal">Contact me</a>
         </div>
       </div>
     </div>
@@ -54,10 +58,11 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <ul class="list-unstyled text-center">
-            <li><a href=" https://www.linkedin.com/in/danny-sibley-b21466133/"><i class="fab fa-linkedin h3"></i></a>
-              <a href="https://github.com/Danny-Sibley"><i class="fab fa-github px-3 h3"></i></a>
-              <a href="mailto: sibley.danny@gmail.com"><i class="fas fa-envelope h3"></i></a>
+          <ul class="list-unstyled text-center list-inline">
+            <li class="list-inline-item"><a href=" https://www.linkedin.com/in/danny-sibley-b21466133/"><i
+                  class="fab fa-linkedin h3"></i></a></li>
+            <a href="https://github.com/Danny-Sibley"><i class="fab fa-github px-3 h3"></i></a>
+            <a href="mailto: sibley.danny@gmail.com"><i class="fas fa-envelope h3"></i></a>
           </ul>
         </div>
       </div>
@@ -67,7 +72,7 @@
 
 <!-- Skills -->
 <section id="skills">
-  <div class="container-fluid">
+  <div class="container-fluid px-5">
     <div class="row">
       <div class="col">
         <h1 class="pt-4 mb-3">Skills:</h1>
@@ -90,7 +95,6 @@
         <p class="text-center text-muted">AWS, Azure</p>
       </div>
     </div>
-    </div>
 
     <div class="row text-center mt-3">
       <div class="col-4">
@@ -109,12 +113,13 @@
         <p class="text-center text-muted">Agile, SDLC</p>
       </div>
     </div>
+  </div>
 </section>
 
 <!-- *Projects section -->
 
 <section id="projects">
-  <div class="container-fluid mx-4 pb-5 g-2">
+  <div class="container-fluid px-5 pb-5 g-2">
     <div class="row pt-5">
       <div class="col-6 col-md-3 text-left ">
         <h1>Latest work</h1>
@@ -123,68 +128,79 @@
             nobis libero eos. Facere quae, ea porro officiis aliquam odit voluptatem esse non, eveniet ullam qui!</p>
         </div>
       </div>
-    
 
-    <!-- *Related course work -->
-        <div class="flex-col mx-auto text-sm-center">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item px-5"><a href="#"><img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block " style="height: 15rem;" alt=""></a></li>
-            <li class="list-inline-item px-5"><a href="#"><img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block" style="height: 15rem;" alt=""></a></li>
-            <li class="list-inline-item px-5"><a href="#"><img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block" style="height: 15rem;" alt=""></a></li>
-          </ul>
-        </div>
-
+      <!-- *Related course work -->
+      <div class="col-4 mx-auto text-sm-center">
+        <a href="#">
+          <img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block img-fluid" alt="">
+        </a>
+        </li>
       </div>
-
-
-
+      <div class="col-4">
+        <a href="#">
+          <img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block img-fluid" alt="">
+        </a>
+        </li>
+      </div>
+      </ul>
     </div>
-
+  </div>
+  </div>
 </section>
 
-<section id="contactForm">
-  <div class="container-fluid mx-4">
-    <div class="row">
-      <div class="col my-3">
-        <h1>Contact:</h1>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md-6 col-sm-12">
-        <form>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md-6 col-sm-12">
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" class="form-control" id="email" placeholder="Email Adddress">
-        </div>
-      </div>
-    </div>
+<!-- Button trigger modal -->
 
-    <div class="row justify-content-center">
-      <div class="col-6">
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" id="modalBody">
+      <div class="modal-header bg-white">
+        <h5 class="modal-title" id="exampleModalLabel">Contact info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-white">
+        <div class="container-fluid px-5 pb-3">
+          <div class="row align-items-center justify-content-center">
+            <div class="col">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Adddress">
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-outline-light" data-dismiss="modal">Send</button>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col offset-md-3">
-        <button type="submit" action="sibley.danny@gmail.com"
-          class="btn btn-outline-light mb-2 float-left">Send</button>
-      </div>
-    </div>
-    </form>
   </div>
-  </div>
-  </div>
+  </form>
+</div>
+
 </section>
 
 <section id="footer">
@@ -192,18 +208,22 @@
     <div class="container-fluid text-center mx-auto my-5">
       <div class="row">
         <div class="col">
-          <h1 class="h6">© Site has been custom created by Vanessa Sibley</h1>
+          <h1 class="h6">&copy; Site has been custom created by Vanessa Sibley</h1>
         </div>
       </div>
     </div>
   </footer>
 </section>
 
-
 <!-- scripts -->
+<!-- build:js js/main.js -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+
 </body>
+
+</html>
