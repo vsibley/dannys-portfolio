@@ -33,7 +33,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-link" href="resume.html">Resume</a>
-          <a class="nav-link" class="btn" data-toggle="modal" data-target="#exampleModal">Contact me</a>
+          <a class="nav-link btn" data-toggle="modal" data-target="#exampleModal">Contact me</a>
         </div>
       </div>
     </div>
@@ -128,41 +128,62 @@
 
 <section id="projects">
   <div class="container-fluid px-5 pb-5 g-2">
-    <div class="row pt-5">
+    <div class="row pt-5 align-items-center">
       <div class="col-6 col-md-3 text-left ">
         <h1>Latest work</h1>
-        <div class="py-2 text-left">
+      </div>
+    </div>
+
+    <!-- *Related course work -->
+    <div class="row align-items-center mt-5">
+      <div class="col-4 mx-auto text-sm-center ">
+        <div class="text-left">
+          <h3>Space Invaders </h3>
           <p class="lead">
-
-
-
             One of my latest projects was a space invaders style game made using pygame, the source code is on github.
             The player contols a spaceship that moves and can shoot aliens. The game includes sounds for actions such as
             shooting or hitting an alien. This was a fun project that allowed me to implement OOP using python.
-
-
-
-
           </p>
         </div>
-      </div>
 
-      <!-- *Related course work -->
-      <div class="col-4 mx-auto text-sm-center">
-        <a href="#">
-          <img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block img-fluid" alt="">
-        </a>
         </li>
       </div>
       <div class="col-4">
         <a href="#">
-          <img src="imgs/Screen Shot 2021-12-24 at 6.56.06 AM.jpeg" class="rounded mx-auto d-block img-fluid" alt="">
+          <img src="imgs/spaceinvaders.gif" class="rounded mx-auto d-block img-fluid" alt="">
         </a>
+        <div class="div mt-3 text-center">
+          <a class="btn btn-outline-dark" href="#" role="button">Source Code</a>
+          <a class="btn btn-outline-dark" href="#" role="button">Launch</a>
+        </div>
         </li>
       </div>
       </ul>
     </div>
-  </div>
+    <div class="row align-items-center mt-5">
+      <div class="col-4 mx-auto text-sm-center ">
+        <a href="#">
+          <img src="imgs/spaceinvaders.gif" class="rounded mx-auto d-block img-fluid" alt="">
+        </a>
+        <div class="div mt-3 mx-auto">
+          <a class="btn btn-outline-dark" href="#" role="button">Source Code</a>
+          <a class="btn btn-outline-dark" href="#" role="button">Launch</a>
+        </div>
+        </li>
+      </div>
+      <div class="col-4">
+        <h3>Home Price Project</h3>
+        <div class="text-left">
+          <p class="lead">
+            One of my latest projects was a space invaders style game made using pygame, the source code is on github.
+            The player contols a spaceship that moves and can shoot aliens. The game includes sounds for actions such as
+            shooting or hitting an alien. This was a fun project that allowed me to implement OOP using python.
+          </p>
+        </div>
+        </li>
+      </div>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -172,58 +193,62 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" id="modalBody">
-      <div class="modal-header bg-white">
-        <h5 class="modal-title" id="exampleModalLabel">Contact info</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-white">
-        <div class="container-fluid px-5 pb-3">
-          <div class="row align-items-center justify-content-center">
-            <div class="col">
-              <form>
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name">
-                </div>
-            </div>
-          </div>
-          <div class="row align-items-center justify-content-center">
-            <div class="col">
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="Email Adddress">
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col">
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
-              </div>
-            </div>
-          </div>
+<section id="modalBody">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class=" modal-content">
+        <div class="modal-header bg-white">
+          <h5 class="modal-title" id="exampleModalLabel">Contact info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-outline-light" data-dismiss="modal">Send</button>
+        <div class="modal-body text-white">
+          <form action="https://getform.io/f/8bc73bc1-0335-4fc0-ba7e-ae0eab655bc2" method="POST">
+            <section>
+              <div class="modal-body text-black">
+                <div class=" container-fluid px-5 pb-3">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col">
+                      <div class="form-group"">
+                            <label for=" name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" name='name'>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" name='email'>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Message"
+                          name='message'></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-outline-light">Send</button>
+                </div>
+              </div>
+            </section>
+          </form>
         </div>
       </div>
     </div>
   </div>
-  </form>
-</div>
-
 </section>
 
+
+<!-- *footer -->
 <section id="footer">
   <footer>
-    <div class="container-fluid text-center mx-auto my-5">
+    <div class="container-fluid text-center mx-auto my-5 sticky-bottom">
       <div class="row">
         <div class="col">
           <h1 class="h6">&copy; Site has been custom created by Vanessa Sibley</h1>
@@ -232,6 +257,8 @@
     </div>
   </footer>
 </section>
+
+
 
 <!-- scripts -->
 <!-- build:js js/main.js -->
